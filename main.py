@@ -1,5 +1,3 @@
-
-
 import discord
 import os
 from dotenv import load_dotenv
@@ -11,7 +9,7 @@ openaitoken = os.getenv('openaitoken')
 my_secret = os.getenv('token')
 
 print(openaitoken)
-print(token)
+print(my_secret)
 
 class MyClient(discord.Client):
 
