@@ -1,16 +1,17 @@
-# application id: 1307448533347205150
-# public key: 92bcf10122daad89ddcee68bedf3e8bf665a29901fb6cc70cbbeda452c30920a
+
 
 import discord
 import os
-
+from dotenv import load_dotenv
 from openai import OpenAI
 import openai
 
-openaitoken = os.environ['openaitoken']
+openaitoken = os.getenv('openaitoken')
 
-my_secret = os.environ['token']
+my_secret = os.getenv('token')
 
+print(openaitoken)
+print(token)
 
 class MyClient(discord.Client):
 
